@@ -1,0 +1,78 @@
+.container {
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.subcontainer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 15vh;
+    color: #CECECE;
+}
+
+.serie {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.serie h2 {
+    font-weight: 700;
+    margin: 0 10px;
+    background-color: #C0392B;
+    width: 80px;
+    height: 29px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.iconMenu{
+    display: none;
+}
+
+.menuContainer {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+
+@media screen and (max-width: 857px) {
+
+    .subcontainer {
+        
+        display: flex;
+        margin: 1vh;
+        font-size: 16px;
+    }
+
+    .link div {
+        display: none;
+    }
+
+    .iconMenu {
+        display: flex;
+        position: absolute;
+        left: 90%;
+        cursor: pointer;    
+    }
+
+    .menuContainer {
+        display: flex;
+        opacity: 1;
+      }
+
+      .menuContainer.sumir {
+        opacity: 0;
+      }
+}

@@ -1,0 +1,198 @@
+.containerPai {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.containerTamanho {
+  width: 100%;
+  height: 750px;
+  position: relative;
+
+}
+
+.capaFundo {
+  position: absolute;
+  opacity: .3;
+  height: inherit;
+  width: 100%;
+  min-width: 1440px;
+
+}
+
+.infos {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.capa {
+  width: 440px;
+  height: 655px;
+  margin: 3rem;
+}
+
+.containerInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.tituloTemporada {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.infosDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.desc {
+  margin-top: 3rem;
+  max-width: 742px;
+}
+
+.idioma {
+  font-weight: bold;
+}
+
+.containerAvaliacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerProgressResult {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progressAvaliacao {
+  background-color: green;
+  height: 10px;
+}
+
+.imagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.imagem {
+  width: 365px;
+  height: 205px;
+  object-fit: cover;
+  margin-right: 3rem;
+}
+
+.elenco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.elencoImg {
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+}
+
+.imagemElenco {
+  width: 138px;
+  height: 175px;
+}
+
+
+@media screen and (max-width: 1286px) {
+  .containerTamanho {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .capaFundo {
+    display: none;
+  }
+
+  .infos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .capa {
+    width: 80%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .containerInfos {
+    margin: 1rem 0;
+
+  }
+
+  .tituloTemporada {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .infosDesc {
+    margin: 1rem;
+  }
+
+  .containerAvaliacao {
+    margin: 1rem;
+  }
+
+  .plataformas {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .elencoImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .imagemElenco {
+    width: 80px;
+    height: 100px;
+  }
+
+  .linha {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .imagem {
+    width: 48%;
+    height: auto;
+    margin: 0.5rem;
+  }
+
+}

@@ -1,0 +1,16 @@
+.input{
+    border-radius: 5px, 0px, 0px, 5px;
+    width: 933px;
+    height: 40px;
+    color: black;
+}
+
+
+@media screen and (max-width: 1151px) {
+
+    .input{
+        width: 328px;
+
+    }
+
+}

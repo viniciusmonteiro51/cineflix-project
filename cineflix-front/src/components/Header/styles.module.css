@@ -1,0 +1,70 @@
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+
+.h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    font-size: auto;
+    color: white;
+}
+
+.busca{
+    display: flex;
+    margin-top: 50px;
+}
+
+.button{
+    width: 153px;
+    height: 40px;
+    flex-shrink: 0; 
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #C0392B;
+    background-color: #C0392B; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #5e1b14;
+    border: 1px solid #5e1b14;
+    cursor: pointer; 
+}
+
+
+@media screen and (max-width: 1151px) {
+  
+
+    .img{
+     height: 318px;
+    }
+
+    .h1{
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .busca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,143 @@
+{
+  "kind": "collectionType",
+  "collectionName": "series",
+  "info": {
+    "singularName": "serie",
+    "pluralName": "series",
+    "displayName": "Serie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "capa": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "capa_fundo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "capa_principal": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imagens": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "idioma": {
+      "type": "string"
+    },
+    "plataformas": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "elenco": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "temporadas": {
+      "type": "integer"
+    },
+    "classificacao": {
+      "type": "integer"
+    },
+    "genero_principal": {
+      "type": "enumeration",
+      "enum": [
+        "    Ação",
+        "    Animação",
+        "    Aventura",
+        "    Comédia",
+        "    Crime",
+        "    Documentário",
+        "    Drama",
+        "    Fantasia",
+        "    Ficção Científica",
+        "    Guerra",
+        "    Musical",
+        "    Mistério",
+        "    Romance",
+        "    Suspense",
+        "    Terror/Horror"
+      ]
+    },
+    "genero_secundario": {
+      "type": "enumeration",
+      "enum": [
+        "    Ação",
+        "    Animação",
+        "    Aventura",
+        "    Comédia",
+        "    Crime",
+        "    Documentário",
+        "    Drama",
+        "    Fantasia",
+        "    Ficção Científica",
+        "    Guerra",
+        "    Musical",
+        "    Mistério",
+        "    Romance",
+        "    Suspense",
+        "    Terror/Horror"
+      ]
+    },
+    "avaliacoes_positivas": {
+      "type": "integer"
+    },
+    "avaliacoes_negativas": {
+      "type": "integer"
+    }
+  }
+}
